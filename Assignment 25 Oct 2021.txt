@@ -1,0 +1,43 @@
+25 Ocrober 2021
+----------------
+Q.1)-Difference b/w GitPull and GitFetch...??
+
+GIT PULL:-
+The git pull command is used to fetch and download content from a remote repository and immediately update the local repository to
+match that content once the content is downloaded git pull will enter a merge workflow. A merge commit will be created and head 
+updated to point at the new commit.
+
+GIT FETCH:-
+The git fetch commamd downloads commits,files and references from a remote repository into your local repository. Fetching is what 
+we want to see, what everybody else has been working on. When downloading content from a remote repository, git pull and git fetch 
+commands are available to accomplish the task.
+
+--> DEFFERENCE BETWEEN GIT PULL AND GIT FETCH :-
+
+-The git fetch command downloads commits, files, and references from a remote repository into your local repository whereas git pull 
+is the more aggressive alternative. Git Pull will download the remote content for the active local branch and immediately execute git 
+merge to create a merge commit for the new remote content.
+
+-When comparing Git Pull vs Git Fetch, Git Fetch is a safer alternative because it pulls in all the commits from your remote repository 
+but does not make any changes to your local files. On the other hand, Git pull is faster as we are performing multiple actions in one.
+
+**--comes after git fetch:-
+git merge origin/master should work. Since master is usually a tracking branch, you could also do git pull from that branch and it will 
+do a fetch & merge for you. If you have local changes on your master that aren't reflected on origin, you might want git rebase 
+origin/master to make sure your commits are on top.
+
+Q.2)- Difference b/w Git Merge and Rebase..??
+
+--> Git Merge
+-Git merge is a command that allows you to merge branches from git.
+-Git merge adds a new commit preserving the  history.
+-Git merge is familiar in use.
+-Git merge maintains the content of the branch.
+
+--> Git Rebase
+-Git rebase is a command that allows developers to integrate changes from one branch to another.
+-Git Rebase moves feature branch into the master.
+-Git Rebase eliminates the unwanted history.
+-Git Rebase is complex in use.
+-Git Rebase cleans intermediate commits by making them a single commit.
+-------------------------------------------------------------------------------------------------------------------------------------------
